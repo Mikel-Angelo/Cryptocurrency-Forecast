@@ -9,3 +9,4 @@
 - > Python3 with Flask API for data transfer. (back-end)
 - > Evaluate the models wich is better and forecast with this.
 - > Visualize the price of data.
+- > Collaboration with [GitHub Pages]([https://pages.github.com/](https://github.com/RaphaelKarg)) 
