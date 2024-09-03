@@ -1,0 +1,99 @@
+<!------------------------- THIS IS HOME PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+<!-- Home Basic Container-->
+<div class="home-container">
+    <!-- Home Brand Information-->
+    <div class="home-brand">
+        <!-- First Section -->
+        <div class="first-section">
+            <h1>
+                <div class="dollar-image">
+                    <!-- Dollar Image here-->
+                    <img src="/static/images/dollar.png" alt="Dollar Image"> 
+                </div>
+                <span class="f-style">F</span>
+                <span class="column-letters">
+                    <span class="first-letter">orecasting</span> 
+                    <span class="second-letter">in</span>
+                    <span class="third-letter">Cryptocurrency</span>
+                </span>
+            </h1>
+            <!-- Paragraph after brand info-->
+            <p class="home-info">Predict the time series with Machine Learning models.</p>
+        </div>
+        <!-- Second Section -->
+        <div class="title-container">
+            <h2>Live Prices</h2>
+            <div class="second-section left">
+            <!-- Crypto Icons-->
+            <!-- Bitcoin Price -->
+                <div class="img-price">
+                    <img src="static/images/bitcoin.png" alt="Bitcoin Icon">
+                    <div class="price-inf">
+                        <div class="first-p"><p>&dollar;</p><p id="price_BIT"></p></div>
+                        <p class="second-p">Bitcoin</p>
+                    </div>
+                </div>
+                <!-- Ethereum Price -->
+                <div class="img-price">
+                    <img src="static/images/ethereum.png" alt="Ethereum Icon">
+                    <div class="price-inf">
+
+                        <div class="first-p"><p>&dollar;</p><p id="price_ETH"></p></div>
+                        <p class="second-p">Ethereum</p>
+                    </div>
+                </div>
+                <!-- Binance Price -->
+                <div class="img-price">
+                    <img src="static/images/binance.png" alt="Binance Icon">
+                    <div class="price-inf">
+
+                        <div class="first-p"><p>&dollar;</p><p id="price_BNB"></p></div>
+                        <p class="second-p">Binance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Second Section(copy) -->
+        <div class="title-container">
+            <h2>Last - Close Prices</h2>
+            <div class="second-section">
+                <!-- Crypto Icons-->
+                <!-- Bitcoin Price -->
+                <div class="img-price">
+                    <img src="static/images/bitcoin.png" alt="Bitcoin Icon">
+                    <div class="price-inf">
+                        <div class="first-p"><p>&dollar;</p><p id="last_price_BIT">{{ close1 }}</p></div>
+                        <p class="second-p">Bitcoin</p>
+                    </div>
+                </div>
+                <!-- Ethereum Price -->
+                <div class="img-price">
+                    <img src="static/images/ethereum.png" alt="Ethereum Icon">
+                    <div class="price-inf">
+
+                        <div class="first-p"><p>&dollar;</p><p id="last_price_ETH">{{ close2 }}</p></div>
+                        <p class="second-p">Ethereum</p>
+                    </div>
+                </div>
+                <!-- Binance Price -->
+                <div class="img-price">
+                    <img src="static/images/binance.png" alt="Binance Icon">
+                    <div class="price-inf">
+
+                        <div class="first-p"><p>&dollar;</p><p id="last_price_BNB">{{ close3 }}</p></div>
+                        <p class="second-p">Binance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrow-container">
+        <a href="/Login" title="Login">&rarr;</a>
+    </div>
+    <!-- For the crypto prices script-->
+    <script src="/static/cryptoPrice.js"></script>
+</div>
+{% endblock content %}

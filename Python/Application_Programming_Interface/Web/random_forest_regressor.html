@@ -1,0 +1,22 @@
+<!------------------------- THIS IS RandomForestRegressor PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+<!-- RandomForestRegressor Basic Container-->
+<div class="models-layout">
+    <!-- Title Model-->
+    <div class="title-model">
+        <h1>Random Forest Regressor Model</h1>
+    </div>
+    <!-- Display the target-->
+    <div class="button-display">
+        <button class="button-alone bordereffect" type="submit" name="submit" onclick="activeButton()">Display the target</button>
+    </div>
+    
+    <!-- GRAPH IMAGE -->
+    <div class="image-graph-container">
+        <!-- First Image -->
+        <img src="/static/images/img_web/Model3.png" class="img-models" alt='Random Forest Regressor'>
+        <a href="/static/images/img_web/Model3.png" target="_blank">Click here for full resolution</a>
+    </div>
+{% endblock content %}

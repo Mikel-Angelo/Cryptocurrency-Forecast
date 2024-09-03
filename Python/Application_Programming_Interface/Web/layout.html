@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GOLDENS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="/static/images/dollar.png" type="image/png" sizes="16x16">
+
+        <!-- Nurito Sans Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+        <!-- USER PROFILE ICON -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <!-- Header Container -->
+        <header>
+            <!-- Dropdown button-->
+            <div class="button-nav-menu" onclick="active()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <!-- Logo Image -->
+            <a class="a-image" href="/Home">
+                <div class="img-logo"></div>
+            </a>
+            <!-- Navigation Menu -->
+            <nav class="navBar">
+                <ul>
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/Login">Evaluation</a></li>
+                    <li><a href="/Forecasting">Forecasting</a></li>
+                    <li><a href="/About">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main Container -->
+        <main>
+            {% block content %}
+
+            {% endblock content %}
+        </main>
+        <!-- Footer Container -->
+        <footer>
+            <p>Copyright &copy; 2023 VK</p>
+            <p>CREATED BY <a href="https://www.linkedin.com/in/raphael-kargos-64a4791ba">Raphael Karg</a> & <a href="https://www.linkedin.com/in/michael-angelo-voudouris-082a20207/">Michel-Angelo</a></p>
+        </footer>
+        <!--General Script -->
+        <script src="/static/script.js"></script>
+    </body>
+</html>

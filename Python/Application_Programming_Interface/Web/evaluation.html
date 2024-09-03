@@ -1,0 +1,56 @@
+<!------------------------- THIS IS Evaluation PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+<!-- About Basic Container-->
+<div class="evaluation-container">
+    <!-- First Section-->
+    <div class="first-section">
+        <!-- Title of the page -->
+        <div class="title-container">
+            <h1>Evaluation of the Models</h1>
+        </div>
+        <div class="subsection">
+            <!-- Select the target -->
+            <div class="target-selection">
+                <p>Choice the Target!</p>
+                
+                <form action="/Evaluation" method="post">
+                    <ol>
+                        <li> <input required  type="radio" name="target" id="second_choice" value="BTCBUSD_Close">BITCOIN</li>
+                        <li> <input required  type="radio" name="target" id="fourth_choice" value="ETHBUSD_Close">ETHEREUM</li>
+                        <li> <input required  type="radio" name="target" id="second_choice" value="BNBBUSD_Close">BINANCE</li>
+                    </ol>
+                    <button class="button-alone bordereffect" type="submit" name="submit" id="submit">Send</button>
+                </form>      
+            </div>
+            <!-- Dropdown Menu-->
+            <div class="dropdown-container">
+                <p>Select model to check the evaluation</p>
+                <div class="button-dropdown-container">
+                    <button class="bordereffect">Models</button>
+                    <ul>
+                        <li><a class="first-link" href="/Linear_Regression" target="_blank">Linear Regression</a></li>
+                        <li><a href="/Decision_Tree" target="_blank" >Decision Tree</a></li>
+                        <li><a href="/Random_Forest_Regressor" target="_blank" >Random Forest Regressor</a></li>
+                        <li><a href="/Gradient_Boosting_Regressor" target="_blank">Gradient Boosting  Regressor</a></li>
+                        <li><a class="last-link" href="/LSTM" target="_blank" >LSTM</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Display the target-->
+        <div class="button-display">
+            <button class="button-alone bordereffect" id="btn_display" type="submit" name="submit" onclick="activeButton()">Display</button>
+        </div>
+    </div>
+    
+    <!-- GRAPH IMAGE -->
+    <div class="image-graph-container">
+        <div class="img-graph">
+            <img src="/static/images/img_web/train_test_split_img.png" alt="Image">
+        </div>
+        <a href="/static/images/img_web/train_test_split_img.png" target="_blank">Click here for full resolution</a>
+    </div> 
+</div>
+{% endblock content %}

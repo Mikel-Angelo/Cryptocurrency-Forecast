@@ -1,0 +1,23 @@
+<!------------------------- THIS IS ABOUT PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+<!-- About Basic Container-->
+<div class="about-container">
+    <!-- About Info Container-->
+    <div class="about-info">
+        <h1>About of this page</h1>
+        <p>
+            This work was implemented as part of our thesis at the University of Western Macedonia. The Front-End part of this page, i.e. 
+            the structure, design and interaction that the user will have with the page, was implemented by <b>Raphael Kargos</b> using HTML, CSS, and Javascript 
+            technologies. The Back-End where the page communicates in the background with the data we need was implemented by
+            <b>Michael - Angelos Voudouris</b> using mainly the Python programming language and the Python Web Framework Flask.
+            This website uses Machine Learning  models to forecast cryptocurrencies.
+        </p> 
+    </div>
+    <!-- Arrows -->
+    <div class="arrow-container">
+        <a href="/Forecasting" title="Forecasting">&larr;</a>
+    </div>         
+</div>
+{% endblock content %}

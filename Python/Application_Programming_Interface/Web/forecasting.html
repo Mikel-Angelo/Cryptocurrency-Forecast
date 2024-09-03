@@ -1,0 +1,61 @@
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+<div class="forecasting-container">
+    <!-- First Section -->
+    <div class="forecasting-first-section">
+        <!-- Page Title-->
+        <div class="title-page">
+            <h1>Forecasting in cryptocurrency</h1>
+        </div>
+        <!-- All crypto currencies -->
+        <div class="cryptocurrency-predictions">
+            <!-- Bitcoin Prediction-->
+            <div class="pred-container">
+                <h2>Bitcoin</h2> <!-- Crypto title -->
+                <div class="crypto-image">
+                    <img src="static/images/bitcoin.png" alt="Bitcoin Image" /> <!-- Crypto Image -->
+                </div>
+                <div class="pred-info">
+                    <span class="mark-left validate-mark-down-btc" id="BTC-down">&darr;</span>
+                    $<p id="btc_pred"> {{ value1 }} </p> <!-- Prediction value--> <p id="close1" style="display: none;"> {{ close1 }} </p>
+                    <span class="validate-mark-up-btc mark-right" id="BTC-up">&uarr;</span>
+                </div>
+            </div>
+            <!-- Ethereum Prediction-->
+            <div class="pred-container">
+                <h2>Ethereum</h2> <!-- Crypto title -->
+                <div class="crypto-image">
+                    <img src="static/images/ethereum.png" alt="Ethereum Image" /> <!-- Crypto Image -->
+                </div>
+                <div class="pred-info">
+                    <span class="mark-left validate-mark-down-eth" id="ETH-down">&darr;</span>
+                    $<p id="eth_pred"> {{ value2 }} </p> <!-- Prediction value--> <p id="close2" style="display: none;"> {{ close2 }} </p>
+                    <span class="validate-mark-up-eth mark-right" id="ETH-up">&uarr;</span>
+                </div>
+            </div>
+            <!-- Binance Prediction-->
+            <div class="pred-container">
+                <h2>Binance</h2> <!-- Crypto title -->
+                <div class="crypto-image">
+                    <img src="static/images/binance.png" alt="Binance Image" /> <!-- Crypto Image -->
+                </div>
+                <div class="pred-info">
+                    <span class="mark-left validate-mark-down-bnb" id="BNB-down">&darr;</span>
+                    $<p id="bnb_pred"> {{ value3 }} </p> <!-- Prediction value--> <p id="close3" style="display: none;"> {{ close3 }} </p>
+                    <span class="validate-mark-up-bnb mark-right" id="BNB-up">&uarr;</span>
+                </div>
+            </div>
+            <div class="last-section">
+                <img src="static/images/img_web/visualize_all_close.png" alt="Visualize Predict Crypto">
+                <p>Click <a href="static/images/img_web/visualize_all_close.png">here</a> to see the full resolution image of the result.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Arrows -->
+    <div class="arrow-container">
+        <a href="/LogIn" title="Log-In">&larr;</a>
+        <a href="/About" title="About">&rarr;</a>     
+    </div>
+</div>
+{% endblock content %}

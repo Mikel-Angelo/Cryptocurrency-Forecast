@@ -1,0 +1,35 @@
+<!------------------------- THIS IS LOGIN PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+    <!-- Login Basic Container-->
+    <div class="login-container">
+        <!-- Form Container -->
+        <div class="form-container">
+            <img src="static/images/login.png" alt="Login">
+            <h1>Press login</h1>
+            <form action="/Login" method="POST" onsubmit="return formValidate()">
+                <!-- First input -->
+                <!-- <i class="fa fa-exclamation-circle" style="color: red"></i>-->
+                <div class="form-group">
+                    <i class="fa fa-user"></i>
+                    <span class="validate-mark" id="validate-mark-username"></span>
+                    <input type="text" name="username" id="username" placeholder="Username" onblur="checkUsername()">
+                </div>
+                <!-- First input-->
+                <div class="form-group">
+                    <i class="fa fa-lock"></i>
+                    <span class="validate-mark" id="validate-mark-password"></span>
+                    <input type="password" name="password" id="password" placeholder="Password" onblur="checkPassword()">
+                </div>
+                <!--Submit Button -->
+                <button type="submit" name="submitbutton" id="submitbutton">&#10003;</button>
+            </form>
+        </div>
+        <!-- Arrows -->
+        <div class="arrow-container">
+            <a href="/Home" title="Home">&larr;</a>
+            <a href="/Forecasting" title="Forecasting">&rarr;</a>     
+        </div>
+    </div>
+{% endblock content %}

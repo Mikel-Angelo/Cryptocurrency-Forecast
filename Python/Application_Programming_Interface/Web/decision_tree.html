@@ -1,0 +1,23 @@
+<!------------------------- THIS IS DECISION TREE REGRESSOR PAGE ------------------------->
+{% extends "/Web/layout.html" %}
+
+{% block content %}
+
+<!-- Decision Tree Basic Container-->
+<div class="models-layout">
+    <!-- Title Model-->
+    <div class="title-model">
+        <h1>Decision Tree Model</h1>
+    </div>
+    <!-- Display the target-->
+    <div class="button-display">
+        <button class="button-alone bordereffect" type="submit" name="submit" onclick="activeButton()">Display the target</button>
+    </div>
+    <!-- GRAPH IMAGE -->
+    <div class="image-graph-container">
+        <!-- First Image -->
+        <img src="/static/images/img_web/Model2.png" class="img-models" alt='Decision Tree'>
+        <a href="/static/images/img_web/Model2.png" target="_blank">Click here for full resolution</a>
+    </div>
+</div>
+{% endblock content %}
