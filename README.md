@@ -7,6 +7,8 @@
 - > Use different models to predict the value.
 - > Create a web-site with HTML, CSS, Vanilla JavaScript. (front-end)
 - > Python3 with Flask API for data transfer. (back-end)
-- > Evaluate the models wich is better and forecast with this.
-- > Visualize the price of data.
+- > Evaluate the models (with RMSE) wich is better and forecast with this.
+- > Test the models on older data 
+- > Visualize the prices of data.
 - > Collaboration with RaphaelKarg [https://github.com/RaphaelKarg](https://github.com/RaphaelKarg)
+
